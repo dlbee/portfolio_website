@@ -1,0 +1,520 @@
+@font-face {
+  font-family: Gt Eesti Display Regular;
+  src: url(../fonts/GT-Eesti-Display-Regular.woff);
+}
+
+body {
+  font-family: Gt Eesti Display Regular;
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+/*header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding:  20px 5% 25px 5%;
+  z-index: 1;
+}
+
+header a:link,
+header a:visited {
+  text-decoration: none;
+}
+header a:hover{
+  text-decoration: none;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+header a {
+  font-size: .55em;
+  letter-spacing: .5px;
+  color: #000000;
+  text-decoration:  none;
+
+}
+
+header a:hover{
+  font-weight: 700;
+}
+
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: underline;
+
+}
+a:hover{
+  color: #000000;
+
+}
+
+/*thumbnails*/
+.project_thumbnails{
+  margin: 65px 5% 0 5%;
+}
+
+.project_thumb {
+  position:  relative;
+}
+
+.project_thumb img {
+  position:  relative;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+
+.project_thumb p {
+  position: absolute;
+  width: 100%;
+  top: 43%;
+  font-size: 6.5vw;
+  text-align: center;
+  z-index: 99;
+
+  visibilty: hidden;
+  opacity: 0;
+
+}
+
+.project_thumb:hover p{
+  visibility: visible;
+  opacity: 1;
+  color: #000000;
+
+}
+
+.project_thumb:hover a{
+  color: #000000;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1330px) {
+  .project_thumb p{
+    font-size: calc(2em + 1vw);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .project_thumb p{
+    font-size: calc(1em + 1vw);
+  }
+}
+
+
+/*project page typography*/
+section.project_description div{
+  margin-top: 90px;
+  padding: 1px 5% 40px;
+  font-size: 3vw;
+  line-height: 1.4;
+}
+
+section.project_description a{
+  color: #000000;
+}
+
+section.project_description a:hover{
+
+}
+
+section.project_description a:visited{
+  color: #000000;
+}
+
+@media only screen and (min-width: 1330px) {
+  section.project_description div{
+    font-size: calc(0.66em + 1vw);
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  section.project_description div{
+    font-size: calc(.54em + 1vw);
+  }
+}
+
+/*about page typography*/
+section.about_description div.big{
+  margin-top: 100px;
+  padding: 1px 5% 40px;
+  font-size: 3vw;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 1330px) {
+  section.about_description div.big{
+    font-size: calc(0.66em + 1vw);
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  section.about_description div.big{
+    font-size: calc(.54em + 1vw);
+  }
+}
+
+/*section.about_description div.small{
+padding: 10px 5% 40px;
+font-size: 3vw;
+line-height: 1.5;
+}
+
+@media only screen and (max-width: 875px) {
+section.about_description div.small{
+font-size: calc(.43em + 1vw);
+}
+}*/
+
+section.about_description div.big a:hover{
+
+}
+section.about_description div.big a:link{
+  text-decoration: underline;
+  color: #000000;
+}
+section.about_description div.big a:visited{
+  color: #000000;
+}
+
+/*projectnav*/
+section.project_nav{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: .55em;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+section.project_nav a:link{
+  color: #000000;
+  text-decoration: underline ;
+
+}
+
+section.project_nav a:hover{
+  font-weight: 700;
+
+}
+
+section.project_nav a:visited{
+  color: #000000;
+  text-decoration: underline ;
+
+}
+
+/*oddsnends*/
+section.oddsnends_work1 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.oddsnends_work1 img {
+  display:  block;
+  margin:  auto;
+  padding: 10px 0 10px 0;
+
+}
+
+section.oddsnends_work1 p{
+  position: relative;
+  margin: 10px 5% 20px;
+  font-size:  .45em;
+  text-align: center;
+  line-height:  1.3;
+
+}
+section.oddsnends_work1 a:link{
+  color: #000000;
+  text-decoration: underline;
+
+}
+section.oddsnends_work1 a:hover{
+  color: #000000;
+
+}
+section.oddsnends_work1 a:visited{
+  color: #000000;
+  text-decoration: underline;
+
+}
+
+section.oddsnends_work2 {
+  margin: auto 5% 0 5%;
+  padding: 10px 0 0px 0;
+
+}
+
+section.oddsnends_work2 div.left {
+  float:  left;
+  width: 50%;
+  padding: 0px 0px 18px 9px;
+
+}
+
+section.oddsnends_work2 div.right {
+  float:  left;
+  width:  50%;
+  padding: 0px 9px 18px 0px;
+
+}
+section.oddsnends_work2 p{
+  position: relative;
+  margin: 0px 5% 20px;
+  font-size:  .45em;
+  text-align: center;
+  line-height:  1.3;
+
+}
+
+section.oddsnends_work3 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.oddsnends_work3 img {
+  display:  block;
+  margin:  auto;
+  padding: 10px 0 10px 0;
+
+}
+section.oddsnends_work3 p{
+  position: relative;
+  margin: 10px 5% 20px;
+  font-size:  .45em;
+  text-align: center;
+  line-height: 1.3;
+
+}
+
+/*livingwith*/
+section.livingwith_work1 {
+  margin: auto 5% 0 5%;
+  padding: 10px 0 0 0;
+
+}
+
+section.livingwith_work1 div.left {
+  float:  left;
+  width: 50%;
+  padding: 0px 0px 20px 10px;
+
+}
+
+section.livingwith_work1 div.right {
+  float:  left;
+  width:  50%;
+  padding: 0px 10px 20px 0px;
+
+}
+
+section.livingwith_work2 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.livingwith_work2 img {
+  display:  block;
+  margin:  auto;
+  padding: 0px 0 20px 0;
+
+}
+
+section.livingwith_work3 {
+  margin: auto 5% 0 5%;
+  padding: 0px 0 0 0;
+
+}
+
+section.livingwith_work3 div.left {
+  float:  left;
+  width: 50%;
+  padding: 0px 0px 20px 10px;
+
+}
+
+section.livingwith_work3 div.right {
+  float:  left;
+  width:  50%;
+  padding: 0px 10px 20px 0px;
+
+}
+
+section.livingwith_work4 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.livingwith_work4 img {
+  display:  block;
+  margin:  auto;
+  padding: 0px 0 20px 0;
+
+}
+
+/*studiodandy*/
+section.studiodandy_work1 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.studiodandy_work1 img {
+  display:  block;
+  margin:  auto;
+  padding: 0px 0 20px 0;
+
+}
+section.studiodandy_work2 {
+  position:  relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.studiodandy_work2 div.left {
+  float:  left;
+  width: 50%;
+  padding: 0px 0px 20px 9px;
+
+}
+
+section.studiodandy_work2 div.right {
+  float:  left;
+  width:  50%;
+  padding: 0px 9px 20px 0px;
+}
+
+section.studiodandy_work3 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.studiodandy_work3 img {
+  display:  block;
+  margin:  auto;
+  padding: 0px 0 20px 0;
+
+}
+/*pixelpunch*/
+section.pixelpunch_work1 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.pixelpunch_work1 img {
+  display:  block;
+  margin:  auto;
+  padding: 0px 0 20px 0;
+
+}
+section.pixelpunch_work2 {
+display: flex;
+  margin: auto 5% 0 5%;
+  padding: 0px 0 0 0;
+
+}
+
+section.pixelpunch_work2 div.left {
+  float:  left;
+  width: 50%;
+  padding: 0px 0px 20px 10px;
+
+}
+
+section.pixelpunch_work2 div.right {
+  float:  left;
+  width:  50%;
+  padding: 0px 10px 20px 0px;
+
+}
+/*argentouskim*/
+section.argkim_work1 {
+  position: relative;
+  margin: auto 5% 0 5%;
+
+}
+
+section.argkim_work1 img {
+  display:  block;
+  margin:  auto;
+  padding: 0px 0 20px 0;
+
+}
+
+section.argkim_work2 {
+  margin: auto 5% 0 5%;
+  padding: 0px 0 0 0;
+
+}
+
+section.argkim_work2 div.left {
+  float:  left;
+  width: 50%;
+  padding: 0px 0px 20px 10px;
+
+}
+
+section.argkim_work2 div.right {
+  float:  left;
+  width:  50%;
+  padding: 0px 10px 20px 0px;
+
+}
+
+@media screen and (max-width: 768px) {
+  section.livingwith_work1,
+  section.pixelpunch_work2,
+  section.oddsnends_work2,
+  section.studiodandy_work2,
+  section.argkim_work2,
+  section.livingwith_work3 {
+    display: flex;
+    flex-direction: column;
+  }
+  section.livingwith_work1 div.right,
+  section.livingwith_work1 div.left,
+  section.pixelpunch_work2 div.right,
+  section.pixelpunch_work2 div.left,
+  section.oddsnends_work2 div.left,
+  section.oddsnends_work2 div.right,
+  section.studiodandy_work2 div.right,
+  section.studiodandy_work2 div.left,
+  section.argkim_work2 div.right,
+  section.argkim_work2 div.left,
+  section.livingwith_work3 div.right,
+  section.livingwith_work3 div.left {
+    width:  100%;
+    padding: 0px 0px 20px;
+  }
+}
+
+/*<div class="project_thumb">
+<a href="argentuouskim.html">
+<img src="studiodandy_3_2.jpg" style="width:100%;height:100%;border:0;"/>
+</a>
+<p class=“project_title”><a href="argentuouskim.html">Argentuous Kim</a></p>
+</div>
+<div class="project_thumb">
+<a href="inboard.html">
+<img src="placeholder_thumb1.jpg" style="width:100%;height:100%;border:0;"/>
+</a>
+<p class="project_title"><a href="inboard.html">InBoard</a></p>
+</div>*/
